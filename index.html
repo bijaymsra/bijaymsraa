@@ -293,13 +293,114 @@ section {
     background: var(--dark-color);
 }
 
+/* for small screens */
+@media screen and (max-width: 992px) {
+    .nav-links {
+        position: fixed;
+        /* background: rgba(255, 255, 255, 0.95); Semi-transparent background */
+        background: rgba(157, 125, 245, 0.9);;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-100%); /* Hide menu above the viewport */
+        transition: transform 0.4s ease;
+        padding: 50px 0;
+    }
+    
+    .nav-links.open {
+        transform: translateY(0); /* Show menu by sliding it down */
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.3s ease;
+    }
+    
+    .nav-links.open li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Staggered animation for each nav item */
+    .nav-links.open li:nth-child(1) { transition-delay: 0.1s; }
+    .nav-links.open li:nth-child(2) { transition-delay: 0.2s; }
+    .nav-links.open li:nth-child(3) { transition-delay: 0.3s; }
+    .nav-links.open li:nth-child(4) { transition-delay: 0.4s; }
+    .nav-links.open li:nth-child(5) { transition-delay: 0.5s; }
+    .nav-links.open li:nth-child(6) { transition-delay: 0.6s; }
+    .nav-links.open li:nth-child(7) { transition-delay: 0.7s; }
+    
+    .nav-links a {
+        font-size: 1.2rem;
+        color: var(--dark-color) !important;
+        padding: 10px 20px;
+        display: block;
+    }
+    
+    .hamburger {
+        display: block;
+        z-index: 100;
+        position: relative;
+    }
+    
+    /* Hamburger animation */
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background: var(--dark-color);
+    }
+    
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background: var(--dark-color);
+    }
+    
+    /* Adjust logo size for mobile */
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    /* Make navbar more compact */
+    #navbar {
+        padding: 10px 5%;
+    }
+    
+    #navbar.sticky {
+        padding: 8px 5%;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    #navbar {
+        padding: 10px 4%;
+    }
+}
+
 /* Hero Section Styles */
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(13, 18, 44, 0.8), rgba(13, 18, 44, 0.8)), url('https://placehold.co/1920x1080?text=@Bijay+Mishra');
+    background: linear-gradient(rgba(13, 18, 44, 0.8), rgba(13, 18, 44, 0.8));
     background-size: cover;
     background-position: center;
     position: relative;
@@ -333,7 +434,7 @@ section {
 }
 
 .social-icons {
-    margin: 25px 250px;
+    margin: 25px 0px;
 }
 
 .social-icons a {
@@ -375,6 +476,43 @@ section {
     z-index: 1;
 }
 
+/* added extra for Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .social-icons {
+        margin: 20px auto;
+    }
+
+    .cta-buttons .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .hero-image {
+        display: none; /* Optionally hide large background shape on small screens */
+    }
+
+    .hero-shape {
+        height: 60px;
+    }
+}
+
+
 /* About Section Styles */
 .about {
     padding: 100px 0;
@@ -403,7 +541,10 @@ section {
 .image-placeholder {
     width: 100%;
     height: 400px;
-    background: linear-gradient(45deg, #f3f3f3 25%, #e6e6e6 25%, #e6e6e6 50%, #f3f3f3 50%, #f3f3f3 75%, #e6e6e6 75%, #e6e6e6 100%);
+    background: linear-gradient(45deg, #f3f3f3 25%, #e6e6e6 25%, #e6e6e6 50%, #f3f3f3 50%, #f3f3f3 75%, #e6e6e6 75%, #e6e6e6 100%), url('./images/bijaymsra.jpeg');
+    background-size: cover; 
+    background-position: center; 
+
     background-size: 20px 20px;
     animation: pulse 4s infinite ease-in-out;
 }
@@ -440,6 +581,34 @@ section {
 .info-value {
     color: var(--text-color);
 }
+
+@media (max-width: 768px) {
+
+    .about-image,
+    .about-text {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .image-placeholder {
+        height: 300px;
+    }
+
+    .info-item {
+        justify-content: center;
+    }
+
+    .info-title {
+        min-width: auto;
+        margin-right: 5px;
+    }
+}
+
 
 /* Skills Section Styles */
 .skills {
@@ -526,6 +695,14 @@ section {
 .skill-item span {
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .skill-category {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 
 /* Experience Section Styles */
 .experience {
@@ -632,6 +809,45 @@ section {
     font-weight: 500;
     color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        padding-left: 40px;
+    }
+
+    .timeline-dot {
+        left: 10px;
+        top: 30px;
+        transform: none;
+    }
+
+    .timeline-content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .timeline-content::before {
+        left: 15px;
+        transform: rotate(45deg);
+    }
+
+    .skills-gained ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .skills-gained li {
+        width: fit-content;
+    }
+}
+
 
 /* Projects Section Styles */
 .projects {
@@ -749,6 +965,37 @@ section {
     color: var(--light-text);
 }
 
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .project-image,
+    .project-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .project-image .image-placeholder {
+        min-height: 200px;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
 /* Certificates Section Styles */
 .certificates {
     padding: 100px 0;
@@ -810,6 +1057,44 @@ section {
     font-size: 0.9rem;
 }
 
+@media (max-width: 992px) {
+    .certificate-card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .certificates-container {
+        flex-direction: column;
+    }
+
+    .certificate-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .certificate-card {
+        padding: 20px;
+    }
+
+    .certificate-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .certificate-info h3 {
+        font-size: 1rem;
+    }
+
+    .certificate-date {
+        font-size: 0.85rem;
+    }
+}
+
+
 /* Achievements Section Styles */
 .achievements {
     background: var(--light-color);
@@ -869,6 +1154,25 @@ section {
     margin-bottom: 10px;
     color: var(--dark-color);
 }
+
+@media (max-width: 768px) {
+    .achievement-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .achievement-icon {
+        margin: 0 0 15px 0;
+    }
+
+    .achievement-content h3 {
+        font-size: 1.1rem;
+    }
+}
+
 
 /* Education Section Styles */
 .education {
@@ -959,6 +1263,44 @@ section {
     color: var(--dark-color);
     margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+    .education-timeline {
+        max-width: 100%;
+    }
+
+    .education-item {
+        padding: 20px 0;
+    }
+
+    .education-dot {
+        top: 20px;
+    }
+
+    .education-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .education-content::before {
+        left: -10px;
+    }
+
+    .education-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .education-content h4 {
+        font-size: 1rem;
+    }
+
+    .education-date,
+    .education-grade {
+        font-size: 0.9rem;
+    }
+}
+
 
 /* Contact Section Styles */
 .contact {
@@ -1072,6 +1414,58 @@ section {
     background: var(--primary-color-dark);
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(106, 99, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .contact-text h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .contact-text p {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
 }
 
 
@@ -1227,10 +1621,6 @@ section {
     font-size: 16px;
 }
 
-
-
-
-
     </style>
 </head>
 <body>
@@ -1289,8 +1679,7 @@ section {
             </div>
             <div class="about-text">
                 <h3>Computer Science Engineer</h3>
-                <p>I am a dedicated Computer Science student at Lovely Professional University with a passion for developing innovative solutions. With expertise in multiple programming languages 
-and frameworks, I enjoy tackling complex problems and creating efficient software solutions.</p>
+                <p>I am a dedicated Computer Science student at Lovely Professional University with a passion for developing innovative solutions. With expertise in multiple programming languages and frameworks, I enjoy tackling complex problems and creating efficient software solutions.</p>
                 <div class="personal-info">
                     <div class="info-item">
                         <span class="info-title">Email:</span>
@@ -1445,8 +1834,7 @@ and frameworks, I enjoy tackling complex problems and creating efficient softwar
                 <div class="project-info">
                     <h3>Dynamic Weather Forecast</h3>
                     <p class="project-date">July 2024 – August 2024</p>
-                    <p class="project-description">Engineered a dynamic weather forecasting platform with real-time temperature, and map-based location visualization. Introduced user-centric 
-functionalities like search history, favorite cities, and an analytics dashboard for top searches.</p>
+                    <p class="project-description">Engineered a dynamic weather forecasting platform with real-time temperature, and map-based location visualization. Introduced user-centric functionalities like search history, favorite cities, and an analytics dashboard for top searches.</p>
                     <div class="project-tech">
                         <span>React.js</span>
                         <span>Node.js</span>
@@ -1469,8 +1857,7 @@ functionalities like search history, favorite cities, and an analytics dashboard
                 <div class="project-info">
                     <h3>Euphoria Organization Management System</h3>
                     <p class="project-date">July 2023 – December 2023</p>
-                    <p class="project-description">Built an integrated platform for managing events, participant registration, and resource allocation for the Euphoria student organization at Lovely 
-Professional University. Streamlined organizational workflows and enhanced coordination through structured automation.</p>
+                    <p class="project-description">Built an integrated platform for managing events, participant registration, and resource allocation for the Euphoria student organization at Lovely Professional University. Streamlined organizational workflows and enhanced coordination through structured automation.</p>
                     <div class="project-tech">
                         <span>HTML</span>
                         <span>CSS</span>
@@ -1733,8 +2120,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ScrollMagic for scroll animations
     var controller = new ScrollMagic.Controller();
-    
-    // Add scroll animations here
     
     // Sticky navigation and scroll to top button
     const navbar = document.getElementById('navbar');
