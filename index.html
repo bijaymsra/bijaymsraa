@@ -297,8 +297,7 @@ section {
 @media screen and (max-width: 992px) {
     .nav-links {
         position: fixed;
-        /* background: rgba(255, 255, 255, 0.95); Semi-transparent background */
-        background: rgba(157, 125, 245, 0.9);;
+        background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(34, 197, 194, 0.9), rgba(168, 85, 247, 0.9));
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -404,11 +403,26 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
+    min-height: 100vh; /* Ensure full height on all screens */
+    padding: 20px; /* Add some padding for small screens */
+    flex-direction: column; /* Stack elements on smaller screens */
 }
 
+
 .hero-content {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
     animation: fadeInUp 1s ease;
+}
+
+.social-icons {
+    margin: 25px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping if needed on small screens */
 }
 
 .hero-content h1 {
@@ -541,11 +555,10 @@ section {
 .image-placeholder {
     width: 100%;
     height: 400px;
-    background: linear-gradient(45deg, #f3f3f3 25%, #e6e6e6 25%, #e6e6e6 50%, #f3f3f3 50%, #f3f3f3 75%, #e6e6e6 75%, #e6e6e6 100%), url('./images/bijaymsra.jpeg');
-    background-size: cover; 
-    background-position: center; 
-
-    background-size: 20px 20px;
+    background: url('./images/bijaymsra.jpeg');
+    background-size: contain; /* Ensures the whole image fits within the area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     animation: pulse 4s infinite ease-in-out;
 }
 
