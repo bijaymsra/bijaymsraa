@@ -1675,7 +1675,7 @@
 
 
     /* for resume download button */
-    .resume-btn {
+    a.resume-btn {
         display: inline-block;
         margin-top: 1rem;
         padding: 0.8rem 1.8rem;
@@ -1688,14 +1688,14 @@
         box-shadow: 0 4px 12px rgba(0, 119, 204, 0.3);
     }
     
-    .resume-btn:hover {
+    a.resume-btn:hover {
         background-color: #005fa3;
         transform: translateY(-2px);
     }
 
     /* for small screens */
     @media (max-width: 767px) {
-        .resume-btn {
+        a.resume-btn {
             padding: 0.7rem 1.4rem;
             font-size: 0.9rem;
             display: block;
