@@ -910,9 +910,6 @@
         min-height: 300px;
     }
     
-    /* .image-placeholder.weather-app {
-        background: linear-gradient(135deg, #74ebd5, #9face6);
-    } */
 
     .image-placeholder.weather-app {
         background: url('./resources/weather.png') center/cover no-repeat;
@@ -1677,68 +1674,8 @@
     }
 
 
-    /* for video cv */
-    .video-cv-sec {
-        justify-content: center;
-        align-items: center;
-        padding: 100px 0;
-    }
-    
-    .video-cv-box {
-        max-width: 100%;
-        background-color: #ffffff;
-        border-radius: 20px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding: 2rem;
-    }
-    
-    @media (min-width: 768px) {
-        .video-cv-box {
-            flex-direction: row;
-            gap: 3rem;
-        }
-    }
-    
-    .video-cv-details {
-        flex: 1;
-    }
-    
-    .video-cv-title {
-        font-size: 2.2rem;
-        color: #1c2a3a;
-        margin-bottom: 1rem;
-    }
-    
-    .video-cv-text {
-        font-size: 1.05rem;
-        color: #555;
-        margin-bottom: 1.2rem;
-        line-height: 1.7;
-    }
-    
-    .video-highlight {
-        color: #0077cc;
-        font-weight: 600;
-    }
-    
-    .video-cv-badge {
-        display: inline-block;
-        background: linear-gradient(45deg, #0077cc, #003f7f);
-        color: #fff;
-        padding: 0.4rem 0.9rem;
-        border-radius: 999px;
-        font-size: 0.75rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-    
-    .video-cv-btn {
+    /* for resume download button */
+    .resume-btn {
         display: inline-block;
         margin-top: 1rem;
         padding: 0.8rem 1.8rem;
@@ -1751,87 +1688,18 @@
         box-shadow: 0 4px 12px rgba(0, 119, 204, 0.3);
     }
     
-    .video-cv-btn:hover {
+    .resume-btn:hover {
         background-color: #005fa3;
         transform: translateY(-2px);
     }
-    
-    .video-cv-player {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-
-    .video-cv-wrapper {
-        position: relative;
-        width: 100%;
-        max-width: 200px;
-        aspect-ratio: 9 / 16; /* Portrait ratio since the video is vertical */
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-        background-color: #0077cc;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .video-cv-video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Zoom and crop if needed */
-        border: none;
-        display: block;
-    }
-    
     /* for small screens */
     @media (max-width: 767px) {
-        .video-cv-sec {
-            padding: 2rem 1rem;
-            height: auto; /* Remove fixed height for smaller screens */
-            flex-direction: column;
-        }
-    
-        .video-cv-box {
-            padding: 1.5rem;
-            gap: 1.5rem;
-        }
-    
-        .video-cv-title {
-            font-size: 1.6rem;
-            text-align: center;
-        }
-    
-        .video-cv-text {
-            font-size: 0.95rem;
-            text-align: center;
-        }
-    
-        .video-cv-btn {
+        .resume-btn {
             padding: 0.7rem 1.4rem;
             font-size: 0.9rem;
             display: block;
             margin: 1rem auto 0;
-            text-align: center;
-        }
-    
-        .video-cv-wrapper {
-            max-width: 160px;
-            aspect-ratio: 9 / 16;
-        }
-    
-        .video-cv-player {
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .video-cv-badge {
-            font-size: 0.7rem;
-            padding: 0.3rem 0.7rem;
-            margin: 0 auto 1rem;
-            display: block;
             text-align: center;
         }
     }
