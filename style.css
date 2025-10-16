@@ -516,100 +516,124 @@
     
     
     /* About Section Styles */
-    .about {
-        padding: 100px 0;
-    }
-    
-    .about-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-    .about-image {
-        flex: 0 0 40%;
-        max-width: 40%;
-        padding: 90px;
-    }
-    
-    .image-container {
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: var(--card-shadow);
-    }
-    
-    .image-placeholder {
-        width: 100%;
-        height: 400px;
-        background: url('./resources/bijaymsra.jpeg');
-        background-size: contain; /* Ensures the whole image fits within the area */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Prevent the image from repeating */
-        animation: pulse 4s infinite ease-in-out;
-    }
-    
-    .about-text {
-        flex: 0 0 55%;
-        max-width: 55%;
-        padding: 20px;
-        animation: fadeInRight 1s ease;
-    }
-    
-    .about-text h3 {
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-        color: var(--primary-color);
-    }
-    
-    .personal-info {
-        margin-top: 30px;
-    }
-    
-    .info-item {
-        margin-bottom: 15px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .info-title {
-        font-weight: 600;
-        min-width: 120px;
-        color: var(--dark-color);
-    }
-    
-    .info-value {
-        color: var(--text-color);
-    }
-    
-    @media (max-width: 768px) {
-    
-        .about-image,
-        .about-text {
-            flex: 0 0 100%;
-            max-width: 100%;
-            padding: 90px;
-        }
-    
-        .about-text h3 {
-            font-size: 1.5rem;
-        }
-    
-        .image-placeholder {
-            height: 300px;
-        }
-    
-        .info-item {
-            justify-content: center;
-        }
-    
-        .info-title {
-            min-width: auto;
-            margin-right: 5px;
-        }
-    }
-    
+.about {
+  padding: 100px 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-image {
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+/* Responsive <img> instead of background */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Keeps the image square */
+  object-fit: cover; /* Fill while maintaining aspect ratio */
+  border-radius: 20px;
+  animation: pulse 4s infinite ease-in-out;
+}
+
+.about-text {
+  flex: 0 0 55%;
+  max-width: 55%;
+  padding: 20px;
+  animation: fadeInRight 1s ease;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.personal-info {
+  margin-top: 30px;
+}
+
+.info-item {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-title {
+  font-weight: 600;
+  min-width: 120px;
+  color: var(--dark-color);
+}
+
+.info-value {
+  color: var(--text-color);
+}
+
+/* 🔹 Responsive Design for Smaller Screens */
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .responsive-img {
+    width: 80%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .about-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .info-item {
+    justify-content: center;
+  }
+
+  .info-title {
+    min-width: auto;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-img {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .about-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .about {
+    padding: 60px 0;
+  }
+}
+
     
     /* Skills Section Styles */
     .skills {
