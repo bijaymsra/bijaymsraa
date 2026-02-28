@@ -2,626 +2,1085 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bijay Kumar Mishra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Bijay Kumar Mishra | Cloud & DevOps Engineer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Bijay Kumar Mishra - Cloud & DevOps Engineer specializing in AWS, Kubernetes, CI/CD, and Full-Stack Development. View projects, certifications, and experience.">
+    <meta name="keywords" content="Bijay Kumar Mishra, Cloud Engineer, DevOps Engineer, AWS, Kubernetes, Docker, React, Spring Boot, Full Stack Developer">
+    <meta name="author" content="Bijay Kumar Mishra">
+    
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="Bijay Kumar Mishra | Cloud & DevOps Engineer">
+    <meta property="og:description" content="Cloud & DevOps Engineer specializing in AWS, Kubernetes, and scalable solutions">
+    <meta property="og:image" content="https://bijaymsra.github.io/portfolio/resources/og-image.jpg">
+    <meta property="og:url" content="https://bijaymsra.github.io/portfolio">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bijay Kumar Mishra | Cloud & DevOps Engineer">
+    <meta name="twitter:description" content="Cloud & DevOps Engineer specializing in AWS, Kubernetes, and scalable solutions">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="logo">
-        <a href="#home" class="active"><h1>Welcome</h1></a>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">&lt;Bijay Mishra/&gt;</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </div>
     </nav>
 
     <!-- Home Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm <span>Bijay Kumar Mishra</span></h1>
-            <h2>I'm a <span class="typed-text"></span></h2>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/bijaymsra" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/bijaymsra" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:bm.bijaymishra@gmail.com"><i class="fas fa-envelope"></i></a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name gradient-text">Bijay Kumar Mishra</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typed-text"></span>
+                </div>
+                <p class="hero-description">
+                    Cloud & DevOps Engineer with 2+ years of experience in building scalable solutions, 
+                    automating workflows, and optimizing cloud infrastructure. Passionate about Kubernetes, 
+                    AWS, and creating impact through technology.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <span>View Work</span>
+                    </a>
+                    <a href="./resources/resume.pdf" download class="btn btn-icon" aria-label="Download Resume">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://github.com/bijaymsra" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/bijaymsra" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:bm.bijaymishra@gmail.com" class="social-link" aria-label="Email">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
             </div>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn primary-btn">Get In Touch</a>
-                <a href="#projects" class="btn secondary-btn">View Projects</a>
+            
+            <div class="hero-visual">
+                <div class="hero-shape"></div>
+                <div class="hero-code">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-title">devops-config.yaml</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code>
+<span class="code-keyword">apiVersion</span>: v1
+<span class="code-keyword">kind</span>: Developer
+<span class="code-keyword">metadata</span>:
+name: bijay-mishra
+labels:
+    role: cloud-devops-engineer
+    expertise: aws-k8s-ci-cd
+<span class="code-keyword">spec</span>:
+containers:
+- name: skills
+    image: full-stack-cloud:v2
+    ports:
+    - containerPort: 8080
+- name: experience
+    image: community-leader:v1
+replicas: 1
+strategy:
+    type: RollingUpdate
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="hero-image">
-            <div class="hero-shape"></div>
+        
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-link">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-    <div class="section-header">
-        <h2>About Me</h2>
-        <div class="underline"></div>
-    </div>
-
-    <div class="about-content">
-        <div class="about-image">
-        <div class="image-container">
-            <img src="./resources/bijaymsra.jpeg" alt="Bijay Kumar Mishra" class="responsive-img" />
-        </div>
-        </div>
-
-        <div class="about-text">
-        <h3>Computer Science Engineer</h3>
-        <p>
-            I am a dedicated Computer Science student at Lovely Professional University
-            with a passion for developing innovative solutions. With expertise in multiple
-            programming languages and frameworks, I enjoy tackling complex problems and
-            creating efficient software solutions.
-        </p>
-
-        <div class="personal-info">
-            <div class="info-item">
-            <span class="info-title">Email:</span>
-            <span class="info-value">bm.bijaymishra@gmail.com</span>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="header-decoration"></div>
             </div>
-            <div class="info-item">
-            <span class="info-title">Phone:</span>
-            <span class="info-value">+91-8810862625</span>
-            </div>
-            <div class="info-item">
-            <span class="info-title">LinkedIn:</span>
-            <span class="info-value">
-                <a href="https://www.linkedin.com/in/bijaymsra" target="_blank">linkedin.com/in/bijaymsra</a>
-            </span>
-            </div>
-            <div class="info-item">
-            <span class="info-title">GitHub:</span>
-            <span class="info-value">
-                <a href="https://github.com/bijaymsra" target="_blank">github.com/bijaymsra</a>
-            </span>
-            </div>
-            <a href="resources/general.pdf" class="resume-btn" download>Download Resume</a>
-        </div>
-        </div>
-    </div>
-    </section>
-
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="section-header">
-            <h2>Experience</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Intern – Community Development and Environmental Studies</h3>
-                    <h4>A Ray of Hope Charitable Trust</h4>
-                    <p class="timeline-date">2023</p>
-                    <p>Interned in a community upliftment project focused on environmental awareness and educational support for underprivileged children.</p>
-                    <div class="skills-gained">
-                        <h5>Skills gained:</h5>
-                        <ul>
-                            <li>Community Outreach</li>
-                            <li>Leadership</li>
-                            <li>Communication</li>
-                            <li>Social Impact</li>
-                        </ul>
+            
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="./resources/bijaymsra.jpeg" alt="Bijay Kumar Mishra" class="profile-img" loading="lazy">
+                        <div class="experience-badge">
+                            <span class="years">1.5+</span>
+                            <span class="text">Years of<br>Experience</span>
+                        </div>
+                        <div class="tech-stack-badge">
+                            <i class="fab fa-aws"></i>
+                            <i class="fab fa-docker"></i>
+                            <i class="fas fa-dharmachakra"></i>
+                            <i class="fab fa-jenkins"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h3>Cloud & DevOps Engineer</h3>
+                    <p class="about-highlight">
+                        Currently pursuing B.Tech in Computer Science at Lovely Professional University with a focus on cloud architecture and DevOps practices.
+                    </p>
+                    <p>
+                        I specialize in building scalable cloud infrastructure, implementing CI/CD pipelines, and optimizing application performance. My journey in tech combines full-stack development with cloud-native technologies to deliver robust solutions.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5+">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="8+">0</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3+">0</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2+">0</div>
+                            <div class="stat-label">Internships</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="./resources/resume.pdf" download class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+
+    <!-- Experience Section -->
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Where I've worked</span>
+                    <h2 class="section-title">Experience</h2>
+                    <div class="header-decoration"></div>
+                </div>
+                
+                <div class="experience-grid">
+                    <!-- Full Stack Cloud & DevOps Engineer -->
+                    <div class="exp-card">
+                        <div class="exp-card-inner">
+                            <div class="exp-header">
+                                <div class="exp-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <div class="exp-title">
+                                    <h3>Full Stack Cloud & DevOps Engineer</h3>
+                                    <div class="exp-badge">
+                                        <span class="exp-type">Freelance</span>
+                                        <span class="exp-badge-current">Current</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="exp-meta">
+                                <span class="exp-date">
+                                    <i class="far fa-calendar"></i> 2024 - Present
+                                </span>
+                                <span class="exp-location">
+                                    <i class="fas fa-map-marker-alt"></i> Remote
+                                </span>
+                            </div>
+                            
+                            <div class="exp-description">
+                                <ul class="exp-list">
+                                    <li>Designed and implemented CI/CD pipelines using GitHub Actions & Jenkins, reducing deployment time by 40%</li>
+                                    <li>Containerized microservices using Docker and orchestrated with Kubernetes on AWS EKS</li>
+                                    <li>Built scalable full-stack applications using React, Node.js, and Spring Boot</li>
+                                    <li>Participated in multiple hackathons and contributed to open-source projects</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exp-skills">
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">Jenkins</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">GitHub Actions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Community Development Intern -->
+                    <div class="exp-card">
+                        <div class="exp-card-inner">
+                            <div class="exp-header">
+                                <div class="exp-icon">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </div>
+                                <div class="exp-title">
+                                    <h3>Community Development Intern</h3>
+                                    <span class="exp-type">Internship</span>
+                                </div>
+                            </div>
+                            
+                            <div class="exp-meta">
+                                <span class="exp-date">
+                                    <i class="far fa-calendar"></i> 2023
+                                </span>
+                                <span class="exp-location">
+                                    <i class="fas fa-building"></i> A Ray of Hope Charitable Trust
+                                </span>
+                            </div>
+                            
+                            <div class="exp-description">
+                                <ul class="exp-list">
+                                    <li>Led community upliftment projects focused on environmental awareness and sustainability</li>
+                                    <li>Organized educational support programs benefiting 100+ underprivileged children</li>
+                                    <li>Coordinated with 25+ volunteers and managed project timelines effectively</li>
+                                    <li>Developed strong communication, leadership, and team management skills</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exp-skills">
+                                <span class="skill-tag">Community Outreach</span>
+                                <span class="skill-tag">Leadership</span>
+                                <span class="skill-tag">Communication</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Team Coordination</span>
+                                <span class="skill-tag">Social Impact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Projects Section - ENHANCED WITH BETTER HOVER -->
     <section id="projects" class="projects">
-        <div class="section-header">
-            <h2>Projects</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="projects-container">
-
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="image-placeholder smart"></div>
-                </div>
-                <div class="project-info">
-                    <h3>Smart Load Balancer For Microservices</h3>
-                    <p class="project-date">May 2025</p>
-                    <p class="project-description">An intelligent load balancing system designed for dynamic microservice architectures. This solution monitors service health and traffic in real time, then uses custom algorithms to distribute requests efficiently—minimizing downtime and improving response times. Built with a React-based dashboard for visualization, a Spring Boot backend for orchestration, and a MySQL database for performance tracking and logs.</p> 
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>SpringBoot</span>
-                        <span>MySQL</span>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My recent work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="header-decoration"></div>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="opensource">Open Source</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 - Smart Curriculum System -->
+                <div class="project-card" data-category="fullstack cloud">
+                    <div class="project-img">
+                        <div class="img-overlay smart-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/bijaymsra/attenza" target="_blank" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Featured</div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/bijaymsra/smart-load-balancer" target="_blank" class="btn project-btn">
-                            <i class="fas fa-external-link-alt"></i> View Link
-                        </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Smart Curriculum & Attendance System</h3>
+                            <span class="project-date">Jan 2026</span>
+                        </div>
+                        <p class="project-description">
+                            Intelligent microservices-based platform with auto-scaling, real-time monitoring, and predictive analytics for educational institutions.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Weather Forecast -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-img">
+                        <div class="img-overlay weather-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/bijaymsra/weatherly" target="_blank" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Popular</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Dynamic Weather Forecast</h3>
+                            <span class="project-date">Aug 2024</span>
+                        </div>
+                        <p class="project-description">
+                            Gamified weather platform with real-time data, search history tracking, and user rankings based on location exploration.
+                        </p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                            <span>REST API</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - Tree Plantation Tracker -->
+                <div class="project-card" data-category="fullstack opensource">
+                    <div class="project-img">
+                        <div class="img-overlay org-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/bijaymsra/Plantation-Event" target="_blank" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Public Welfare</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Tree Plantation & Greenery Tracker</h3>
+                            <span class="project-date">Jul 2025</span>
+                        </div>
+                        <p class="project-description">
+                            Community platform connecting volunteers for tree plantation events with real-time tracking and environmental impact metrics.
+                        </p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Blade</span>
+                            <span>REST API</span>
+                            <span>Leaflet.js</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="image-placeholder weather-app"></div>
-                </div>
-                <div class="project-info">
-                    <h3>Dynamic Weather Forecast</h3>
-                    <p class="project-date">July 2024 – August 2024</p>
-                    <p class="project-description">Engineered a dynamic weather forecasting platform with real-time temperature, and map-based location visualization. Introduced user-centric functionalities like search history, favorite cities, and an analytics dashboard for top searches.</p>
-                    <div class="project-tech">
-                        <span>React.js</span>
-                        <span>Node.js</span>
-                        <span>MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/bijaymsra/weatherly" target="_blank" class="btn project-btn">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                </div>
+            
+            <div class="projects-more">
+                <a href="https://github.com/bijaymsra" target="_blank" class="btn btn-outline">
+                    View All Projects <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="image-placeholder org-system"></div>
-                </div>
-                <div class="project-info">
-                    <h3>Euphoria Organization Management System</h3>
-                    <p class="project-date">July 2023 – December 2023</p>
-                    <p class="project-description">Built an integrated platform for managing events, participant registration, and resource allocation for the Euphoria student organization at Lovely Professional University. Streamlined organizational workflows and enhanced coordination through structured automation.</p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>JavaScript</span>
-                        <span>MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://bijaymsra.github.io/eup" target="_blank" class="btn project-btn">
-                            <i class="fas fa-external-link-alt"></i> Web Link
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="section-header">
-            <h2>Skills</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fab fa-java"></i></div>
-                        <span>Java</span>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Technical expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="header-decoration"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Cloud & DevOps -->
+                <div class="skill-category highlight">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & DevOps</h3>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fab fa-python"></i></div>
-                        <span>Python</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                        <span>Bash Shell</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fab fa-js"></i></div>
-                        <span>JavaScript</span>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                                <span>AWS (EC2, S3, EKS, Lambda)</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
+                                <span>Kubernetes</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-jenkins"></i></div>
+                                <span>Jenkins & GitHub Actions</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="skill-category">
-                <h3>Frameworks</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fab fa-react"></i></div>
-                        <span>ReactJS</span>
+                
+                <!-- Languages -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
-                        <span>NodeJS</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fas fa-leaf"></i></div>
-                        <span>Spring Boot</span>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                <span>JavaScript/TypeScript</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                                <span>Bash/Go</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="skill-category">
-                <h3>Tools & Platforms</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fas fa-database"></i></div>
-                        <span>MySQL</span>
+                
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cubes"></i>
+                        <h3>Frameworks</h3>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fas fa-database"></i></div>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fab fa-docker"></i></div>
-                        <span>Docker</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
-                        <span>Kubernetes</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fab fa-aws"></i></div>
-                        <span>AWS</span>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                <span>React.js / Next.js</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                                <span>Node.js / Express</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                                <span>Spring Boot</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                                <span>Laravel</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="skill-category">
-                <h3>Soft Skills</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
-                        <span>Problem-Solving</span>
+                
+                <!-- Databases -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fas fa-users"></i></div>
-                        <span>Team Player</span>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <span>MySQL / PostgreSQL</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <span>Redis</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="65"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-icon"><i class="fas fa-sync-alt"></i></div>
-                        <span>Adaptability</span>
+                </div>
+                
+                <!-- Tools & Monitoring -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Monitoring</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                                <span>Prometheus / Grafana</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                                <span>Git / GitHub / GitLab</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                                <span>Linux / Bash</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Problem-Solving</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Team Leadership</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Communication</span>
+                            </div>
+                            <div class="skill-level-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
-        <div class="section-header">
-            <h2>Certifications</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="certificates-container">
-            <div class="certificate-card">
-                <div class="certificate-icon">
-                    <i class="fas fa-cloud"></i>
-                </div>
-                <div class="certificate-info">
-                    <h3>Cloud Computing (NPTEL)</h3>
-                    <p class="certificate-date">July 2024 – October 2024</p>
-                    <p>Acquired expertise in scalable cloud solutions.</p>
-                </div>
+    <!-- Certifications Section -->
+    <section id="achievements" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Recognition & Learning</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="header-decoration"></div>
             </div>
-            <div class="certificate-card">
-                <div class="certificate-icon">
-                    <i class="fas fa-database"></i>
+            
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Oracle Cloud Infrastructure 2025</h3>
+                    <p class="cert-detail">AI Foundations Associate</p>
+                    <span class="cert-date">Nov 2025 - Nov 2027</span>
+                    <div class="cert-credential">Credential ID: OCI2025AI123</div>
                 </div>
-                <div class="certificate-info">
-                    <h3>MySQL Developer Certification (E-BOX)</h3>
-                    <p class="certificate-date">June 2024 – July 2024</p>
-                    <p>Completed MySQL certification.</p>
+
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Generative AI for IT</h3>
+                    <p class="cert-detail">Infosys Springboard</p>
+                    <span class="cert-date">May 2025</span>
                 </div>
-            </div>
-            <div class="certificate-card">
-                <div class="certificate-icon">
-                    <i class="fab fa-python"></i>
+
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing</h3>
+                    <p class="cert-detail">NPTEL</p>
+                    <span class="cert-date">Jul - Nov 2024</span>
+                    <div class="cert-credential">Elite Certification</div>
                 </div>
-                <div class="certificate-info">
-                    <h3>Python for Data Science (IBM)</h3>
-                    <p class="certificate-date">June 2023 – July 2023</p>
-                    <p>Demonstrated proficiency in Python for data analysis.</p>
+                
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL Developer</h3>
+                    <p class="cert-detail">E-BOX</p>
+                    <span class="cert-date">Jun - Jul 2024</span>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python for Data Science</h3>
+                    <p class="cert-detail">IBM</p>
+                    <span class="cert-date">Jun - Jul 2023</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="section-header">
-            <h2>Achievements</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="achievements-container">
-            <div class="achievement-item">
-                <div class="achievement-icon">
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <div class="achievement-content">
-                    <h3>Leadership at Euphoria</h3>
-                    <p>Organized and participated in events and clubs at Euphoria, showcasing leadership.</p>
-                </div>
+    <section class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Awards & Recognition</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="header-decoration"></div>
             </div>
-            <div class="achievement-item">
-                <div class="achievement-icon">
-                    <i class="fas fa-hands-helping"></i>
+            
+            <div class="achievements-grid">
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>NSS Volunteer</h3>
+                        <p>Active participation in blood donation camps and community service</p>
+                        <span class="achievement-year">2022-Present</span>
+                    </div>
                 </div>
-                <div class="achievement-content">
-                    <h3>NSS Volunteering</h3>
-                    <p>Volunteered for National Service Scheme (NSS) initiatives such as blood donation camps.</p>
+
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Leadership at Euphoria</h3>
+                        <p>Organized 5+ technical events and workshops with 200+ participants</p>
+                        <span class="achievement-year">2023-2025</span>
+                    </div>
+                </div>
+                    
+   
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Debate Competation Finalist</h3>
+                        <p>School level Events, Actively Participated in debate competation</p>
+                        <span class="achievement-year">School level Competation</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
+    <!-- Education Timeline -->
     <section id="education" class="education">
-        <div class="section-header">
-            <h2>Education</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="education-timeline">
-            <div class="education-item">
-                <div class="education-dot"></div>
-                <div class="education-content">
-                    <h3>Bachelor of Technology - Computer Science and Engineering</h3>
-                    <h4>Lovely Professional University</h4>
-                    <p class="education-date">Since August 2022</p>
-                    <p class="education-grade">CGPA: 8.00</p>
-                    <p>Punjab, India</p>
-                </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Academic journey</span>
+                <h2 class="section-title">Education</h2>
+                <div class="header-decoration"></div>
             </div>
-            <div class="education-item">
-                <div class="education-dot"></div>
-                <div class="education-content">
-                    <h3>Intermediate</h3>
-                    <h4>Tilottama English Secondary School</h4>
-                    <p class="education-date">April 2021</p>
-                    <p class="education-grade">Percentage: 87.5%</p>
+            
+            <div class="edu-timeline">
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+                    <div class="edu-content">
+                        <div class="edu-header">
+                            <h3>B.Tech Computer Science & Engineering</h3>
+                            <span class="edu-grade">CGPA: 8.00</span>
+                        </div>
+                        <h4>Lovely Professional University</h4>
+                        <p class="edu-date">2022 - Present · Punjab, India</p>
+                        <p class="edu-desc">Specialization in Cloud Computing & DevOps</p>
+                    </div>
                 </div>
-            </div>
-            <div class="education-item">
-                <div class="education-dot"></div>
-                <div class="education-content">
-                    <h3>Matriculation</h3>
-                    <h4>Sanskar Higher Secondary School</h4>
-                    <p class="education-date">April 2019</p>
-                    <p class="education-grade">Percentage: 82.5%</p>
+                
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+                    <div class="edu-content">
+                        <div class="edu-header">
+                            <h3>Senior Secondary (Intermediate)</h3>
+                            <span class="edu-grade">87.5%</span>
+                        </div>
+                        <h4>Tilottama English Secondary School</h4>
+                        <p class="edu-date">Completed 2021 · Nepal</p>
+                    </div>
+                </div>
+                
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+                    <div class="edu-content">
+                        <div class="edu-header">
+                            <h3>Secondary (Matriculation)</h3>
+                            <span class="edu-grade">82.5%</span>
+                        </div>
+                        <h4>Sanskar Higher Secondary School</h4>
+                        <p class="edu-date">Completed 2019 · Nepal</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section - Enhanced -->
     <section id="contact" class="contact">
-        <div class="section-header">
-            <h2>Get In Touch</h2>
-            <div class="underline"></div>
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="gradient-text">Let's Connect</h2>
+                    <p class="contact-description">
+                        I'm currently available for freelance work and full-time opportunities. 
+                        Whether you have a project in mind or just want to say hi, feel free to reach out!
+                    </p>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Email Card -->
+                    <div class="contact-card" data-aos="fade-up">
+                        <div class="contact-card-inner">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <a href="mailto:bm.bijaymishra@gmail.com" class="contact-link">bm.bijaymishra@gmail.com</a>
+                            <button class="copy-btn" onclick="copyToClipboard('bm.bijaymishra@gmail.com', this)">
+                                <i class="far fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone Card -->
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-card-inner">
+                            <div class="contact-icon-wrapper">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <a href="tel:+918810862625" class="contact-link">+91 88108 62625</a>
+                            <span class="contact-note">Tap to call</span>
+                        </div>
+                    </div>
+                    
+                    <!-- LinkedIn Card -->
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-card-inner">
+                            <div class="contact-icon-wrapper">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/bijaymsra" target="_blank" class="contact-link">@bijaymsra</a>
+                            <span class="contact-note">Connect with me</span>
+                        </div>
+                    </div>
+                    
+                    <!-- GitHub Card -->
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-card-inner">
+                            <div class="contact-icon-wrapper">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/bijaymsra" target="_blank" class="contact-link">@bijaymsra</a>
+                            <span class="contact-note">Connect to Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
+    </section>
+
+    <!-- Opportunities Banner -->
+    <section class="opportunities-banner">
+        <div class="container">
+            <div class="banner-wrapper">
+                <div class="banner-left">
+                    <div class="open-badge">
+                        <span class="pulse-dot"></span>
+                        Open to Opportunities
                     </div>
-                    <div class="contact-text">
-                        <h3>Email</h3>
-                        <p>bm.bijaymishra@gmail.com</p>
+                    <h3>Location Preferences</h3>
+                    <div class="location-tags">
+                        <span class="location-tag">PAN India</span>
+                        <span class="location-tag">Remote</span>
+                        <span class="location-tag">Hybrid</span>
+                        <span class="location-tag">WFO</span>
+                    </div>
+                    
+                    <h3>Roles</h3>
+                    <div class="role-tags">
+                        <span class="role-tag">Cloud/DevOps Engineer</span>
+                        <span class="role-tag">SRE</span>
+                        <span class="role-tag">Platform Engineer</span>
+                        <span class="role-tag">Full Stack Developer</span>
+                    </div>
+                    
+                    <h3>Availability</h3>
+                    <div class="availability-tags">
+                        <span class="availability-tag immediate">Immediate</span>
+                        <span class="availability-tag">30 days notice</span>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
+                
+                <div class="banner-right">
+                    <div class="stats-mini-grid">
+                        <div class="stat-mini-item">
+                            <span class="stat-value">1.5+</span>
+                            <span class="stat-label">Years Freelancing</span>
+                        </div>
+                        <div class="stat-mini-item">
+                            <span class="stat-value">12+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-mini-item">
+                            <span class="stat-value">99.9%</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <h3>Phone</h3>
-                        <p>+91-8810862625</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://www.linkedin.com/in/bijaymsra" target="_blank">linkedin.com/in/bijaymsra</a></p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
+                    
+                    <div class="tech-cloud">
+                        <i class="fab fa-aws"></i>
+                        <i class="fab fa-docker"></i>
+                        <i class="fas fa-dharmachakra"></i>
+                        <i class="fab fa-jenkins"></i>
                         <i class="fab fa-github"></i>
                     </div>
-                    <div class="contact-text">
-                        <h3>GitHub</h3>
-                        <p><a href="https://github.com/bijaymsra" target="_blank">github.com/bijaymsra</a></p>
-                    </div>
+                    
+                    <a href="./resources/resume.pdf" download class="btn btn-primary btn-block">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
                 </div>
-            </div>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn submit-btn">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-    <div class="footer-content">
-        <div class="footer-info">
-            <div class="footer-logo">
-                <h2>Bijay Kumar Mishra</h2>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h2>Bijay Kumar Mishra</h2>
+                    <p class="footer-title">Cloud & DevOps Engineer</p>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> PAN India · Remote</p>
+                        <p><i class="fas fa-envelope"></i> bm.bijaymishra@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 88108 62625</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#achievements">Certifications</a></li>
+                        <li><a href="./resources/resume.pdf" download>Resume</a></li>
+                        <li><a href="https://github.com/bijaymsra">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/bijaymsra">LinkedIn</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/bijaymsra" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/bijaymsra" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:bm.bijaymishra@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="footer-note">Open for opportunities PAN India</p>
+                </div>
             </div>
-            <div class="footer-description">
-                <p>Computer Science Engineer and Web Developer passionate about creating innovative solutions to complex problems.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bijay Kumar Mishra.</p>
             </div>
         </div>
-        
-        <div class="footer-contact">
-            <h3>Contact & Support</h3>
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:bm.bijaymishra@gmail.com"> bm.bijaymishra@gmail.com</a></p>
-            <p><i class="fas fa-phone"></i> Phone: +91 8810862625</p>
-            <p><i class="fas fa-comment"></i> For technical support or feedback, please reach out via email or connect on LinkedIn.</p>
-        </div>
-        
-        <div class="footer-social">
-           <center><h3>Connect With Me</h3></center> 
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/bijaymsra" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/bijaymsra" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:bm.bijaymishra@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://twitter.com/bijaymsra" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2025 Bijay Kumar Mishra. All Rights Reserved.</p>
-    </div>
-</footer>
+    </footer>
 
-<!-- Scroll to Top Button -->
-<button id="scrollToTop" class="scroll-to-top">
-    <i class="fas fa-arrow-up"></i>
-</button>
-<script>
-    // TypedJS initialization
-document.addEventListener('DOMContentLoaded', function() {
-    var typed = new Typed('.typed-text', {
-        strings: [
-    'Aspiring Software Engineer',
-    'Full-Stack Developer',
-    'Cloud and DevOps Enthusiast',
-    'React, Node.js and Springboot Specialist',
-    'Problem Solver by Passion',
-    'Python and Java Programmer',
-    'Database Design Pro',
-    'Tech for Social Good Advocate',
-    'Lifelong Learner',
-    'Future Tech Leader'
-],
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 2000,
-        loop: true
-    });
-    
-    // Mobile menu toggle
-    const hamburger = document.querySelector('.hamburger');
-    const mobileNavLinks = document.querySelector('.nav-links');
-    
-    hamburger.addEventListener('click', () => {
-        mobileNavLinks.classList.toggle('open');
-        hamburger.classList.toggle('active');
-    });
-    
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            
-            // Close mobile menu if open
-            mobileNavLinks.classList.remove('open');
-            hamburger.classList.remove('active');
-            
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-    
-    // ScrollMagic for scroll animations
-    var controller = new ScrollMagic.Controller();
-    
-    // Sticky navigation and scroll to top button
-    const navbar = document.getElementById('navbar');
-    const scrollToTopBtn = document.getElementById('scrollToTop');
-    
-    window.onscroll = function() {
-        // Sticky navigation
-        if (window.pageYOffset > 50) {
-            navbar.classList.add('sticky');
-        } else {
-            navbar.classList.remove('sticky');
-        }
-        
-        // Show/hide scroll to top button
-        if (window.pageYOffset > 300) {
-            scrollToTopBtn.style.opacity = '1';
-            scrollToTopBtn.style.visibility = 'visible';
-        } else {
-            scrollToTopBtn.style.opacity = '0';
-            scrollToTopBtn.style.visibility = 'hidden';
-        }
-    };
-    
-    // Scroll to top button functionality
-    scrollToTopBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        console.log("Scroll to top button clicked"); // For debugging
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-    
-    // Active navigation link based on scroll position
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    
-    window.addEventListener('scroll', () => {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            
-            if (window.pageYOffset >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
-    });
-    
-    // Form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Message sent successfully!');
-            this.reset();
-        });
-    }
-});
-</script>
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
